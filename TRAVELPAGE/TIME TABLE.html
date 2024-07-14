@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="" en'=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./TIME TABLE_files/style.css">
+    <title>TIME TABLE </title>
+</head>
+<body>
+    <center> <h1>
+    IT 3C TIMETABLE
+    </h1></center>
+
+   <table border="1" cellpadding="8" cellspacing="0" width="100%">
+    <tbody><tr>
+        <th> SLOT</th>
+        <th> MONDAY </th>
+        <th> TUESDAY  </th>
+        <th> WEDNESDAY </th>
+        <th> THURSDAY </th>
+        <th> FRIDAY </th>
+    </tr>
+    <tr>
+        <td> 9:00 - 9:55 </td>
+        <td> OS </td>
+        <td>  </td>
+        <td>  </td>
+        <td> OS LAB</td>
+        <td> EM-4 </td>
+    </tr>
+    <tr>
+        <td> 9:55 - 10:50</td>
+        <td> RDBMS</td>
+        <td> </td>
+        <td> </td>
+        <td> OS LAB</td>
+        <td> RDBMS</td>
+    </tr>
+    <tr>
+        <td> 10:50- 11:45 </td>
+        <td> EM-4 </td>
+        <td> RDBMS LAB</td>
+        <td> RDBMS</td>
+        <td> </td>
+        <td> OS</td>
+    </tr>
+    <tr>
+        <td> 11:45-12:40 </td>
+        <td> WEB TECH</td>
+        <td> RDBMS LAB </td>
+        <td> RDBMS</td>
+        <td> </td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td> 12:40-01:35 </td>
+        <td> lunch break </td>
+        <td>lunch break </td>
+        <td> lunch break </td>
+        <td> lunch break </td>
+        <td> lunch break </td>
+        
+    </tr>
+    <tr>
+        <td> 1:35- 2:30 </td>
+        <td>  </td>
+        <td> RDBMS </td>
+        <td> RDBMS LAB</td>
+        <td> WEB TECH</td>
+        <td>  </td>
+        
+    </tr>
+    <tr>
+        <td> 2:30-03:25</td>
+        <td>  </td>
+        <td> OS  </td>
+        <td> RDBMS LAB </td>
+        <td> OS </td>
+        <td>  </td>
+        
+    </tr>
+    <tr>
+        <td> 03:25-04:20</td>
+        <td>  </td>
+        <td> WEB TECH </td>
+        <td> </td>
+        <td> EM-4</td>
+        <td>  </td>
+        
+    </tr>
+    <tr>
+        <td> 4:20-05:15</td>
+        <td> OE </td>
+        <td> VEG </td>
+        <td> OE</td>
+        <td> VEG </td>
+        <td> OE </td>
+        
+    </tr>
+
+   </tbody></table>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
