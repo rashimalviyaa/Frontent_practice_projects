@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+  }
+  h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+  }
+  form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: whitesmoke
+    border-radius 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="tel"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  input[type="submit"],
+  input[type="reset"] {
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  input[type="submit"]:hover,
+  input[type="reset"]:hover {
+    background-color: #45a049;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .form-group label {
+    display: inline-block;
+    width: 120px;
+    vertical-align: top;
+  }
+  body {
+  background-image: url('bgimage.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+</style>
+</head>
+<body>
+<h2>Registration Form</h2>
+<form action="#" method="POST">
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required placeholder="Enter your name">
+  
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required placeholder="Enter your password">
+
+  
+    <label for="email">E-mail ID:</label>
+    <input type="email" id="email" name="email" required placeholder="Enter your email address">
+  
+ 
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+ 
+  
+    <label>Sex:</label>
+    <input type="radio" id="male" name="sex" value="male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="sex" value="female">
+    <label for="female">Female</label>
+
+  
+    <label for="dob">Date of Birth:</label>
+    <select name="dob_day" id="dob_day" >
+      <option value="">choose date</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+      <option value="16">16</option>
+      <option value="17">17</option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+      <option value="21">21</option>
+      <option value="22">22</option>
+      <option value="23">23</option>
+      <option value="24">24</option>
+      <option value="25">25</option>
+      <option value="26">26</option>
+      <option value="27">27</option>
+      <option value="28">28</option>
+      <option value="29">29</option>
+      <option value="30">30</option>
+      <option value="31">31</option>
+    </select>
+    <select name="dob_month" id="dob_month" required>
+      <option value="">choose month</option>
+      <option value="1">January</option>
+      <option value="2">February</option>
+      <option value="3">March</option>
+      <option value="4">april</option>
+      <option value="5">May</option>
+      <option value="6">June</option>
+      <option value="7">July</option>
+      <option value="8">August</option>
+      <option value="9">september</option>
+      <option value="10">ocober</option>
+      <option value="11">november</option>
+      <option value="12">december</option>
+    </select>
+    <select name="dob_year" id="dob_year" required>
+      <option value="">choose year</option>
+      <option value="2000">2024</option>
+      <option value="2001">2024</option>
+      <option value="2002">2024</option>
+      <option value="2003">2024</option>
+      <option value="2004">2024</option>
+      <option value="2005">2024</option>
+      <option value="2006">2024</option>
+      <option value="2007">2024</option>  
+      <option value="2008">2024</option>
+      <option value="2009">2024</option>
+      <option value="2010">2024</option>
+      <option value="2011">2024</option>
+      <option value="2012">2024</option>
+      <option value="2013">2024</option>
+      <option value="2014">2024</option>
+      <option value="2015">2024</option>
+      <option value="2016">2024</option>
+      <option value="2017">2024</option>
+      <option value="2018">2024</option>
+      <option value="2019">2024</option>
+      <option value="2020">2024</option>
+      <option value="2021">2024</option>  
+      
+    </select>
+ 
+  
+    <label>Languages Known:</label><br>
+    <input type="checkbox" id="hindi" name="languages[]" value="hindi">
+    <label for="hindi">Hindi</label><br>
+    <input type="checkbox" id="english" name="languages[]" value="english">
+    <label for="english">English</label><br>
+    <input type="checkbox" id="sanskrit" name="languages[]" value="sanskrit">
+    <label for="sanskrit">Sanskrit</label><br>
+ 
+  
+    <label for="address">Address:</label><br>
+    <textarea id="address" name="address" rows="4" cols="50" placeholder="Enter your address"></textarea>
+  </div>
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+</form>
+</body>
+</html>
+

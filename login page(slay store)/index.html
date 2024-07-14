@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SLAY STORE</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('bg_img.jpg'); 
+        background-size: cover; 
+        background-position:center
+    }
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: lightpink;
+        border-radius: 8px;
+        box-shadow: 10 0 10px rgba(32, 5, 155, 0.1);
+       
+    }
+    h1 {
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+        color: rgb(7, 1, 8);
+    }
+    fieldset {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+    legend {
+        font-weight: bold;
+    }
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+    input[type="text"],
+    input[type="password"],
+    select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+    input[type="radio"] {
+        margin-right: 0px;
+    }
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        resize: none;
+    }
+    button {
+        padding: 10px 20px;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+
+    }
+    .gender-label {
+        display: inline-block;
+    }
+    input[type="text"]:hover,
+    input[type="password"]:hover {
+    border-color: blue;
+    transition: border-color 0.3s ease; 
+}
+    
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>SLAY STORE</h1>
+    <form method="post" action="process.php">
+        <fieldset>
+            <br>
+            <legend>LOGIN INFORMATION</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Write your name here"required>
+
+            <label for="city">City:</label>
+            <select id="city" name="city"required>
+                <optgroup label="Rajasthan">
+                    <option>Jaipur</option>
+                    <option>Udaipur</option>
+                    <option>Jaisalmer</option>
+                    <option>Bhilwara</option>
+                </optgroup>
+                <optgroup label="Madhya Pradesh">
+                    <option>Indore</option>
+                    <option>Bhopal</option>
+                    <option>Ujjain</option>
+                    <option>Ratlam</option>
+                </optgroup>
+                <optgroup label="Maharashtra">
+                    <option>Nagpur</option>
+                    <option>Mumbai</option>
+                    <option>Pune</option>
+                    <option>Lonavala</option>
+                </optgroup>
+            </select>
+        
+        </br>
+
+            <label class="gender-label">Gender:</label>
+            <label for="male" class="gender-label">Male</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="female" class="gender-label">Female</label>
+            <input type="radio" id="female" name="gender" value="female" required >
+            <label for="others" class="gender-label">Others</label>
+            <input type="radio" id="others" name="gender" value="others" required >
+            <br>
+            </br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$" title="Password must contain at least one uppercase letter, one lowercase letter, one number, one special character, and be at least 8 characters long" placeholder="example: Abcdef1#" required>
+
+
+            <button type="submit">Register</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
